@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon API and Ajax Practice</title>
+  <style>
+  .pokemon{
+    display: inline-block;
+  }
+  </style>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var newdiv= $('<div><p>pina</p></div>')
+    function pokeimg(pokenum){
+      for(var i=1; i<=pokenum; i++){
+        $("#wrapper").append("<div class='pokemon'><img src='http://pokeapi.co/media/img/"+i+".png'></div>");
+        // $('#dummy').prepend('<img src="https://s-media-cache-ak0.pinimg.com/564x/f5/df/de/f5dfde33b8663bb2fa9db8c15767145a.jpg">')
+        // console.log('poop');
+      }
+    }
+    pokeimg(650);
+  })
+  </script>
+</head>
+<body>
+  <div id='wrapper'>
+    <img src='http://pokeapi.co/media/img/1.png'>
+  </div>
+  <!-- <div id='dummy'>
+  </div> -->
+</body>
+</html>
